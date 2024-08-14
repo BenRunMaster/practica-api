@@ -12,5 +12,5 @@ class CurrencyConverter:
             rates = data['conversion_rates']
             return rates.get(to_currency, None)
         else:
-            print(f"Error: {data['error-type']}")
+            print(f"\033[91mError: {data['error-type']}\033[0m")
             return None
