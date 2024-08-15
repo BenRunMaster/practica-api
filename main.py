@@ -28,7 +28,8 @@ def main():
                 rate = converter.get_exchange_rate(from_currency, to_currency)
                 if rate:
                     converted_amount = amount * rate
-                    print(f"\033[92m{amount} {from_currency} = {converted_amount:.2f} {to_currency}\033[0m")
+                    print(f"\033[94m{amount} {from_currency} = {converted_amount:.2f} {to_currency}\033[0m")
+                    print("\n")
                 else:
                     print("\033[91mError: No se pudo obtener la tasa de cambio.\033[0m")
             except ValueError:
